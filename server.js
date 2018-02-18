@@ -63,7 +63,7 @@ function templates(data)
                                 <meta name="viewport" content="width=device-width,initial-scale=1" />
                             </head>
                             <body>
-                                <h3>$(heading)</h3>
+                                
                                 <br/>
                                 $(content)
                             </body>
