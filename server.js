@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 var about={
-    title:Bharath | about,
-    heading:Bharath,
+    title:'Bharath | about',
+    heading:'Bharath',
     content:
             `<div class="container">
             <p> I am Bharath Santhakumar,</p>
@@ -19,7 +19,7 @@ var about={
 };
 
 var education={
-    title:Bharath | education,
+    title:'Bharath | education',
     heading:'Bharath Santhakumar',
     content:
             `<div class="container">
