@@ -61,7 +61,7 @@ function templates(data)
                                 <title>${title}</title>
                                 <link href="/ui/style.css" rel="stylesheet" />
                                 <meta name="viewport" content="width=device-width,initial-scale=1" />
-                               <img src="imad-app/ui/pic.jpg" class="img-medium"/>
+                               <img src="imad-app/ui/.png" class="img-medium"/>
                             </head>
                             <body>
                                 ${content}
