@@ -25,7 +25,7 @@ var education={
             `<div class="container">
                 <table>
         	        <tbody>
-                	    <tr color="blue">
+                	    <tr>
                 		<th>SI.no</th>
                 		<th>Institution</th>
                 		</tr>
