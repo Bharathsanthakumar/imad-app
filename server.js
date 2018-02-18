@@ -52,9 +52,9 @@ var education={
 
 function templates(data)
 {
-    title=data.title;
-    heading-data.heading;
-    content-data.content;
+    var title=data.title;
+    var headings=data.heading;
+    var content=data.content;
     var htmltemplate=`<!DOCTYPE html>
                         <html>
                             <head>
@@ -63,7 +63,7 @@ function templates(data)
                                 <meta name="viewport" content="width=device-width,initial-scale=1" />
                             </head>
                             <body>
-                                
+                                $(headings)
                                 <br/>
                                 $(content)
                             </body>
