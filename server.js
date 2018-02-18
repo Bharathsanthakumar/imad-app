@@ -58,14 +58,14 @@ function templates(data)
     var htmltemplate=`<!DOCTYPE html>
                         <html>
                             <head>
-                                $(title)
+                                ${title}
                                 <link href="/ui/style.css" rel="stylesheet" />
                                 <meta name="viewport" content="width=device-width,initial-scale=1" />
                             </head>
                             <body>
-                                $(headings)
+                                ${headings}
                                 <br/>
-                                $(content)
+                                ${content}
                             </body>
                         </html>`;
     return (htmltemplate);                    
@@ -80,7 +80,7 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(templates(education));
 });
 
 app.get('/ui/style.css', function (req, res) {
