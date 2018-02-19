@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var about={
+var articles={
+'about':{
     title:'Bharath | about',
     heading:'Bharath',
     content:
@@ -16,9 +17,9 @@ var about={
             <p>This is all about me :-/</p>
             </div>`
     
-};
+},
 
-var education={
+'education':{
     title:'Bharath | education',
     heading:'Bharath Santhakumar',
     content:
@@ -49,6 +50,7 @@ var education={
                  </table>
             </div>`
 };
+}
 
 function templates(data)
 {
@@ -78,15 +80,11 @@ app.get('/pic', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic.jpg'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(templates(about));
+app.get('/:articlename', function (req, res) {
+    articlename=req.params.articlename;
+  res.send(templates(articles((articlename)));
 });
 
-
-
-app.get('/article-two', function (req, res) {
-  res.send(templates(education));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
