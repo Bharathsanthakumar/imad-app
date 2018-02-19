@@ -20,6 +20,10 @@ body {
     height: 200px;
 }
 
+.img-small {
+    height: 10px;
+}
+
 .container{
     color: black;
     text-align: center;
