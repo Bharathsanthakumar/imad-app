@@ -49,8 +49,8 @@ var articles={
         		    </tbody>
                  </table>
             </div>`
-};
 }
+};
 
 function templates(data)
 {
