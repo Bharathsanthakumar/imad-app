@@ -1,2 +1,2 @@
-confirm("hi");
-var counter=document.getElementById('button');
+
+var button=document.getElementById('button');
