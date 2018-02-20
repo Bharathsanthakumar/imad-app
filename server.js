@@ -89,7 +89,7 @@ var counter=0;
 
 app.get('/counter', function (req, res) {
     counter=counter+1;
-    res.send("<p>hi<p>");
+    res.send(counter.toString());
 });
 
 app.get('/ui/main.js', function (req, res) {
