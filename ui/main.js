@@ -6,5 +6,4 @@ button.onclick = function () {
     counter=counter+1;
     var span=document.getElementById('1');
     span.innerHTML=counter.toString();
-    var request = new xml
 }
