@@ -35,7 +35,8 @@ submit.onClick = function()
         {
             if(request.status === 200)
             {
-                var names = ['name1','name2','name3','name4','name5','name5'];
+                var name=request.responseText;
+                names=JSON.parse(name);
                 var htmllist='';
                 for(var i=0;i<names.length;i++)
                 {
@@ -48,10 +49,12 @@ submit.onClick = function()
         }
     };
     
-    request.open('GET' , 'http://bharathsanthakumar99.imad.hasura-app.io/names' ,true);
-    request.send(null);
-    
     var name=document.getElementById('name_input');
     var names=name.value;
+    
+    request.open('GET' , 'http://bharathsanthakumar99.imad.hasura-app.io/nameing?names=names' ,true);
+    request.send(null);
+    
+    
     
 };
