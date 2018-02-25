@@ -40,7 +40,7 @@ submit.onClick = function()
                 var htmllist='';
                 for(var i=0;i<names.length;i++)
                 {
-                    htmllist="<ul>"+names[i]+"</ul>";
+                    htmllist+="<ul>"+names[i]+"</ul>";
                 }
     
                 var listt=document.getElementById('list');
