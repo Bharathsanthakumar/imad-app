@@ -17,7 +17,7 @@ button.onClick = function()
         }
     };
     
-    request.OPEN('GET' , 'http://bharathsanthakumar99.imad.hasura-app.io/counter' ,true);
+    request.open('GET' , 'http://bharathsanthakumar99.imad.hasura-app.io/counter' ,true);
     request.send(null);
     
 };
