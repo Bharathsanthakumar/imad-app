@@ -1,9 +1,20 @@
+var button=document.getElementById("1");
 
-var button=document.getElementById('2');
-var counter=0;
-
-button.onclick = function () {
-    counter=counter+1;
-    var span=document.getElementById('1');
-    span.innerHTML=counter.toString();
-}
+button.onClick = function()
+{
+    var request=new XMLHttpRequest();
+    
+    request.onreadystatechange =function()
+    {
+        if(request.readystate ===XMLHttpRequestDONE)
+        {
+            if(request.readystate === 200)
+            {
+                var counter=request.responsetext;
+                var span=document.getElementById("2");
+                span.innerHTML = counter+1;
+            }
+        }
+    };
+    
+};
