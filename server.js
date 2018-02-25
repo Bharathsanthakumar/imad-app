@@ -93,7 +93,7 @@ app.get('/counter',function(req,res)
 });
 
 app.get('/ui',function(req,res){
-   res.send(hi); 
+   res.send("hi"); 
 });
 
 app.get('/ui/main.js', function (req, res) {
