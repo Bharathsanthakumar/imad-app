@@ -21,7 +21,7 @@ button.onClick = function()
     request.send(null);
     
 };
-
+/*
 var name=document.getElementById('name_input');
 var names=name.value;
 var submit=document.getElementById('sub');
@@ -38,3 +38,4 @@ submit.onClick = function()
     var listt=document.getElementById('list');
     listt.innerHTML=htmllist;
 };
+*/
