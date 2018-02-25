@@ -12,9 +12,12 @@ button.onClick = function()
             {
                 var counter=request.responsetext;
                 var span=document.getElementById("2");
-                span.innerHTML = counter+1;
+                span.innerHTML = counter.toString();
             }
         }
     };
+    
+    request.OPEN('GET' , 'http://bharathsanthakumar99.imad.hasura-app.io/counter' ,true);
+    request.send(null);
     
 };
