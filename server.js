@@ -92,8 +92,6 @@ app.get('/:articlename', function (req, res) {
   res.send(templates(articles[articlename]));
 });
 
-
-
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
@@ -108,7 +106,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 var names =[];
 
-app.get('/:names' , function(req,res) {
+app.get('/name_insert/:names' , function(req,res) {
    var named=req.params.names;
    names.push(named);
    res.send(JSON.stringify(names));
