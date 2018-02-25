@@ -21,3 +21,20 @@ button.onClick = function()
     request.send(null);
     
 };
+
+var name=document.getElementById('name_input');
+var names=name.value;
+var submit=document.getElementById('sub');
+
+submit.onClick = function()
+{
+    var names = ['name1','name2','name3','name4','name5','name5'];
+    var htmllist='';
+    for(var i=0;i<names.length;i++)
+    {
+        htmllist="<ul>"+names[i]+"</ul>";
+    }
+    
+    var listt=document.getElementById('list');
+    listt.innerHTML=htmllist;
+};
