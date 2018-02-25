@@ -6,7 +6,7 @@ button.onClick = function()
     
     request.onreadystatechange =function()
     {
-        if(request.readystate ===XMLHttpRequestDONE)
+        if(request.readystate ===XMLHttpRequest.DONE)
         {
             if(request.readystate === 200)
             {
