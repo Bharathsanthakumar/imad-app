@@ -63,7 +63,8 @@ function templates(data)
                                 <title>${title}</title>
                                 <link href="/ui/style.css" rel="stylesheet" />
                                 <meta name="viewport" content="width=device-width,initial-scale=1" />
-                                <img src="/ui/madi.png" alt="madi" class="img-medium"/>
+                                 <link href="/ui/madi.png" rel="shortcut icon" />
+                                
                             </head>
                             <body>
                                 ${content}
