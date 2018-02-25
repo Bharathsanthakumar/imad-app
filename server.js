@@ -98,7 +98,7 @@ app.get('/pic', function (req, res) {
 });
 
 app.get('/:articlename', function (req, res) {
-    articlename=req.params.articlename;
+  articlename=req.params.articlename;
   res.send(templates(articles[articlename]));
 });
 
