@@ -106,7 +106,6 @@ app.get('/pic', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic.jpg'));
 });
 
-var pool=new pool(config);
 
 
 app.get('/articles/:articlename', function (req, res) {
