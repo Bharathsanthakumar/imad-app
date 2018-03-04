@@ -83,9 +83,6 @@ function templates(data)
     return (htmltemplate);                    
 }
 
-var pool=new pool(config);
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -108,6 +105,8 @@ app.get('/naming' , function(req,res) {
 app.get('/pic', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic.jpg'));
 });
+
+var pool=new pool(config);
 
 
 app.get('/articles/:articlename', function (req, res) {
