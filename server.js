@@ -133,7 +133,7 @@ app.get('/articles/:articlename', function (req, res) {
     
 });
 
-
+var pool=new pool(config)
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
