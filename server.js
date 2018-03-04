@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool=require('pg').pool;
+var pool=require('pg-pool');
 
 var config={
     username:'bharathsanthakumar99',
@@ -82,6 +82,8 @@ function templates(data)
                         </html>`;
     return (htmltemplate);                    
 }
+
+var pool=new pool(config);
 
 
 app.get('/', function (req, res) {
