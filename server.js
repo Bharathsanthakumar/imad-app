@@ -76,6 +76,7 @@ function templates(data)
                                 
                             </head>
                             <body>
+                                ${headings}
                                 ${content}
                             </body>
                         </html>`;
