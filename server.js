@@ -11,6 +11,9 @@ var config={
     password: process.env.db_password
 };
 
+
+var pool=new pool(config);
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -82,8 +85,6 @@ function templates(data)
                         </html>`;
     return (htmltemplate);                    
 }
-
-var pool=new pool(config);
 
 
 app.get('/', function (req, res) {
