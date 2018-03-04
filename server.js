@@ -11,9 +11,6 @@ var config={
     password: process.env.db_password
 };
 
-
-var pool=new pool(config);
-
 var app = express();
 app.use(morgan('combined'));
 
@@ -109,6 +106,9 @@ app.get('/naming' , function(req,res) {
 app.get('/pic', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic.jpg'));
 });
+
+
+var pool=new pool(config);
 
 app.get('/articles/:articlename', function (req, res) {
   
