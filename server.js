@@ -9,7 +9,7 @@ var config={
     host:'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
-};
+}
 
 var app = express();
 app.use(morgan('combined'));
@@ -107,8 +107,7 @@ app.get('/pic', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic.jpg'));
 });
 
-
-var pool = new pool(config);
+var pool = new Pool(config);
 
 app.get('/articles/:articlename', function (req, res) {
   
