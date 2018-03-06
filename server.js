@@ -108,7 +108,7 @@ app.get('/pic', function (req, res) {
 });
 
 
-
+var pool=new pool(config);
 
 app.get('/articles/:articlename', function (req, res) {
   
