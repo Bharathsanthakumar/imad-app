@@ -8,7 +8,7 @@ var config={
     database:'bharathsanthakumar99',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password: db-bharathsanthakumar99-17838
+    password:process.env.DB_PASSWORD
 };
 
 var app = express();
