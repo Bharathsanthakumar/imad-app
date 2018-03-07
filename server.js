@@ -96,7 +96,7 @@ function hash(input,salt)
 }
 
 app.get('/hash/:pass' ,function(req,res) {
-   var hashed_str = hash(pass,'hi');
+   var hashed_str = hash(req.params.pass,'hi');
    res.send(hashed_str);
 });
 
